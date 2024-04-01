@@ -10,8 +10,8 @@ const Budget = () => {
       const value = event.target.value;
       if (value <= totalExpenses) {
         alert('You cannot reduce the budget value lower than spending');
-      } else if (value > 20000){
-        alert('You cannot exceed a budget of 20000!');
+      } else if (value > 2000){
+        alert('You cannot exceed a budget of 2000!');
       } else {
         dispatch({ payload: value, type: 'SET_BUDGET' });
         setNewBudget(value);
